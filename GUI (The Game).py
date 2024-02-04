@@ -8,7 +8,6 @@ def start_game():
     root = tk.Tk()
     root.title("Tic Tac Toe")
     root.iconbitmap('icon.ico')
-    root.attributes("-fullscreen", True)
 
     def on_start_game():
         pygame.mixer.music.load('click.wav')
@@ -161,22 +160,10 @@ def footbal_game(player_name,friend_name):
     root.attributes("-fullscreen", True)
 
 
-    football_clubs = [r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\ACM.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\Arsenal.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\Atletico.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\barca.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\Bayern.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\Chelsea.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\MAN city.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\Man United.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\Liverpool.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\KING.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\juve.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\inter.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\Dortmond.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\PSG.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\Rome.png",
-                      r"C:\Users\dell\OneDrive - Egypt University of Informatics\Desktop\x o\GUI\spurs.png"
+    football_clubs = ["ACM.png","Arsenal.png","Atletico.png","barca.png",
+                      "Bayern.png","Chelsea.png","MAN city.png","Man United.png",
+                      "Liverpool.png","KING.png","juve.png","inter.png","Dortmond.png",
+                      "PSG.png","Rome.png","spurs.png"
                       ]
 
     football_Data = ['south_america.png', 'north_america.png',
@@ -240,7 +227,6 @@ def footbal_game(player_name,friend_name):
             start_game()
         else:
             current_player = (current_player + 1) % 2
-            reset_timer()
 
     def check_winner_football():
         for i in range(3):
